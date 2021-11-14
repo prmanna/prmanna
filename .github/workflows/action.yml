@@ -1,7 +1,8 @@
 name: Metrics
 on:
   # Schedule updates (each hour)
-  schedule: [{cron: "* * * * *"}]
+  schedule: 
+  - cron: "* * * * *"
   # Lines below let you run workflow manually and on each commit (optional)
   push: {branches: ["main"]}
 jobs:
